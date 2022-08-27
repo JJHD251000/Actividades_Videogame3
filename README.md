@@ -1,2 +1,2 @@
 # Actividades_Videogame3
-Repositorio personal para las actividades de TC3003C
+Repositorio personal para las actividades de TC3003C en carpeta Proceso
