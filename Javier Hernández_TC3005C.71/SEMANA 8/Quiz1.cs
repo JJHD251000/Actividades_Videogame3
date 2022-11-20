@@ -47,22 +47,22 @@ public class Quiz1 : MonoBehaviour
     void Update()
     {
 
-        tr1 = Trasformaciones.RotateZ(rotZ* 0.7f);
-        tm1 = Trasformaciones.Translate(0.5f, 0, 0);
-        ts1 = Trasformaciones.Scale(1f, 0.5f, 0.5f);
-        LINK1.GetComponent<MeshFilter>().mesh.vertices = Trasformaciones.Transform(tr1 * tm1 * ts1,  vLINK1);
+        tr1 = Transformaciones.RotateZ(rotZ* 0.7f);
+        tm1 = Transformaciones.Translate(0.5f, 0, 0);
+        ts1 = Transformaciones.Scale(1f, 0.5f, 0.5f);
+        LINK1.GetComponent<MeshFilter>().mesh.vertices = Transformaciones.Transform(tr1 * tm1 * ts1,  vLINK1);
         LINK1.GetComponent<MeshFilter>().mesh.RecalculateNormals();
 
-        tr2 = Trasformaciones.RotateZ(rotZ * 0.7f);
-        tm2 = Trasformaciones.Translate(0.5f, 0, 0);
-        ts2 = Trasformaciones.Scale(1f, 0.5f, 0.5f);
-        LINK2.GetComponent<MeshFilter>().mesh.vertices = Trasformaciones.Transform(tr1 * tm1 * tm2 *tr2 * tm2 * ts1,  vLINK2);
+        tr2 = Transformaciones.RotateZ(rotZ * 0.7f);
+        tm2 = Transformaciones.Translate(0.5f, 0, 0);
+        ts2 = Transformaciones.Scale(1f, 0.5f, 0.5f);
+        LINK2.GetComponent<MeshFilter>().mesh.vertices = Transformaciones.Transform(tr1 * tm1 * tm2 *tr2 * tm2 * ts1,  vLINK2);
         LINK2.GetComponent<MeshFilter>().mesh.RecalculateNormals();
 
-        tr3 = Trasformaciones.RotateZ(rotZ * 0.7f);
-        tm3 = Trasformaciones.Translate(0.5f, 0, 0);
-        ts3 = Trasformaciones.Scale(1f, 0.5f, 0.5f);
-        LINK3.GetComponent<MeshFilter>().mesh.vertices = Trasformaciones.Transform(tr1 * tm1 * tm2 *tr2 * tm2 * tm3 * tr3 * tm3 * ts1,  vLINK3);
+        tr3 = Transformaciones.RotateZ(rotZ * 0.7f);
+        tm3 = Transformaciones.Translate(0.5f, 0, 0);
+        ts3 = Transformaciones.Scale(1f, 0.5f, 0.5f);
+        LINK3.GetComponent<MeshFilter>().mesh.vertices = Transformaciones.Transform(tr1 * tm1 * tm2 *tr2 * tm2 * tm3 * tr3 * tm3 * ts1,  vLINK3);
         LINK3.GetComponent<MeshFilter>().mesh.RecalculateNormals();
 
         if(rotZ < 45.0f && isUP == false)
